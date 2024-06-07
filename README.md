@@ -1,6 +1,6 @@
 # test_ci_cd
 
-A new Flutter project.
+A new test CI/CD project.
 
 ## Getting Started
 
