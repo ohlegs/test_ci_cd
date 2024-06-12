@@ -1,10 +1,21 @@
 pipeline {
+    agent any
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'flutter pub get'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
 }
-
