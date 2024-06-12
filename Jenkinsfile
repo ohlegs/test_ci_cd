@@ -1,11 +1,8 @@
-
-Jenkinsfile (Declarative Pipeline)
-/* Requires the Docker Pipeline plugin */
 pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'gradle --version'
+                sh 'flutter pub get'
             }
         }
     }
